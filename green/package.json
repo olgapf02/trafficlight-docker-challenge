@@ -8,9 +8,9 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "4.17.1",
+    "express": "^4.17.1",
+    "express-ipfilter-secured": "0.3.3",
     "pug": "3.0.2",
-    "serve-favicon": "2.5.0",
-    "express-ipfilter-secured": "0.3.3"
+    "serve-favicon": "2.5.0"
   }
 }
