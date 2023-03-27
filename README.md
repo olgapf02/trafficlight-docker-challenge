@@ -77,7 +77,7 @@ By completing all the instructions of this project, at the end of it, you will h
 - 1.1.2 The <ins>working directory</ins> inside the containers should be the `/app` directory  
 - 1.1.3 Copy the `package*.json` files to the working directory `/app` before installation of the `npm` package manager
 - 1.1.4 Install the `npm` package manager via `apk` (APK stands for Alpine Linux package keeper/manager). The required version of the npm is `npm=7.17.0-r0`. [See how to install packages in Alpine](https://wiki.alpinelinux.org/wiki/Alpine_Package_Keeper#Add_a_Package). After the <ins>apk</ins> instruction install dependency packages with the `nmp install` command
-- 1.1.5 Copy the `app.js` file to the working directory  
+- 1.1.5 Copy th4e `app.js` file to the working directory  
 - 1.1.6 Copy the `index.pug` and `favicon.ico` files to the `/app/views/` directory  
 - 1.1.7 All containers must expose the port `80`
 - 1.1.8 All containers should execute the following command: `node app.js` in run time

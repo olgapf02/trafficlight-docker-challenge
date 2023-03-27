@@ -10,8 +10,7 @@ WORKDIR /app
 # 1.1.3 | Copy "package*.json" file(s) to working directory
 COPY package*.json /app/
 # 1.1.4 | Install "npm=7.17.0-r0" package manager, then install dependency packages
-RUN apk add --no-cache npm=7.17.0-r0
-COPY app.js /app/
+RUN apk add --no-cache npm=7.17.0-r0 && npm install
 # 1.1.5 | Copy "app.js" file to working directory
 COPY app.js /app/
 # 1.1.6 | Copy "index.pug" and "favicon.ico" files to working directory
@@ -21,3 +20,4 @@ COPY favicon.ico /app/
 EXPOSE 80
 # 1.1.8 | The container must execute the command "node app.js" in run time
 CMD [ "node", "app.js" ]
+
