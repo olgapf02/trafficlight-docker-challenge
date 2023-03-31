@@ -14,10 +14,11 @@ RUN apk add --no-cache npm=7.17.0-r0 && npm install
 # 1.1.5 | Copy "app.js" file to working directory
 COPY app.js /app/
 # 1.1.6 | Copy "index.pug" and "favicon.ico" files to working directory
-COPY index.pug /app/
-COPY favicon.ico /app/
+COPY views/index.pug ./views/
+COPY views/favicon.ico ./views/
 # 1.1.7 | The port "80" should be exposed by the container
 EXPOSE 80
 # 1.1.8 | The container must execute the command "node app.js" in run time
 CMD [ "node", "app.js" ]
+
 

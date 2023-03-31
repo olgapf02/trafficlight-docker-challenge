@@ -1,25 +1,25 @@
-version: '3'
-services:
-  red-app:
-    image: semáforo/rojo:v1.0
-    networks:
-      - traffic-light
-  yellow-app:
-    image: semáforo/amarillo:v1.0
-    networks:
-      - traffic-light
-  green-app:
-    image: semáforo/verde:v1.0
-    networks:
-      - traffic-light
-  nginx-load-balancer:
-    image: nginx:1.21
-    ports:
-      - "80:80"
-    volumes:
-      - ~/nginx/conf.d/:/etc/nginx/conf.d/
-      - /var/log/nginx/:/var/log/nginx/ 
-    networks:
-      - traffic-light
-networks:
-  traffic-light:
+# version: '3'
+# services:
+#   red-app:
+#     image: semáforo/rojo:v1.0
+#     networks:
+#       - traffic-light
+#   yellow-app:
+#     image: semáforo/amarillo:v1.0
+#     networks:
+#       - traffic-light
+#   green-app:
+#     image: semáforo/verde:v1.0
+#     networks:
+#       - traffic-light
+#   nginx-load-balancer:
+#     image: nginx:1.21
+#     ports:
+#       - "80:80"
+#     volumes:
+#       - ~/nginx/conf.d/:/etc/nginx/conf.d/
+#       - /var/log/nginx/:/var/log/nginx/ 
+#     networks:
+#       - traffic-light
+# networks:
+#   traffic-light:
